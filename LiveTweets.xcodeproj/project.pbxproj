@@ -55,6 +55,7 @@
 		BA75E0102819F9AA00E23087 /* Ignorable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ignorable.swift; sourceTree = "<group>"; };
 		BACA4580281A1D5400E655D9 /* RuleAddRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuleAddRequest.swift; sourceTree = "<group>"; };
 		BACA4582281A1FE000E655D9 /* Twitter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Twitter.swift; sourceTree = "<group>"; };
+		BACA4584281A243500E655D9 /* Readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
 		BAFD43072818B45E0058E42A /* TweetDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetDetailView.swift; sourceTree = "<group>"; };
 		BAFD430E2818BB610058E42A /* TwitterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterViewModel.swift; sourceTree = "<group>"; };
 		BAFD4317281956E80058E42A /* TwitterAPI.Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterAPI.Router.swift; sourceTree = "<group>"; };
@@ -85,6 +86,7 @@
 		BA36BD6628189D3600AD4300 = {
 			isa = PBXGroup;
 			children = (
+				BACA4584281A243500E655D9 /* Readme.md */,
 				BA36BD7128189D3600AD4300 /* LiveTweets */,
 				BAFD4323281964DC0058E42A /* LiveTweetsTests */,
 				BA36BD7028189D3600AD4300 /* Products */,

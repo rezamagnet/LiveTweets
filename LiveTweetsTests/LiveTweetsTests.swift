@@ -29,6 +29,24 @@ class LiveTweetsTests: XCTestCase {
             }
         }
         
-        wait(for: [exp], timeout: 10)
+        // 20 seconds because some keyword takes more time to get tweets
+        wait(for: [exp], timeout: 20)
+    }
+    
+    func testUpdateTweetRule() async {
+        let exp = expectation(description: "Update tweet rules")
+        
+        let keyword = "covid"
+        
+        let result = await twitterAPI.updateRule(text: keyword)
+        
+        switch result {
+        case .success:
+            exp.fulfill()
+        case let .failure(error):
+            XCTFail(error.localizedDescription)
+        }
+        
+        wait(for: [exp], timeout: 8)
     }
 }
