@@ -13,14 +13,13 @@ struct TweetDetailView: View {
     
     var body: some View {
         VStack(alignment: .leading) {
-            let tweetId = String(format: "Tweet id: %@".localized(), tweet.id)
-            Text(tweetId)
+            Text("Tweet id: \(tweet.id)")
                 .font(.headline)
             Text(tweet.text)
                 .font(.body)
             Spacer()
         }
-        .navigationTitle("Detail".localized())
+        .navigationTitle("Detail")
         .padding()
     }
 }

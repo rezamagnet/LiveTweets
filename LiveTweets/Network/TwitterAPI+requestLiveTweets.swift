@@ -24,7 +24,7 @@ extension TwitterAPI {
             case .none:
                 completion(.failure(
                     ErrorModel(
-                        errorDescription: "Empty Response".localized()
+                        errorDescription: "Empty Response"
                     )
                 ))
             }

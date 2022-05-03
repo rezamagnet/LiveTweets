@@ -10,7 +10,7 @@
 	<key>Tweet id: %@</key>
 	<dict>
 		<key>NSStringLocalizedFormatKey</key>
-		<string>Tweet id: %@</string>
+		<string>Tweet id: %@ - Twitter</string>
 		<key>Variable</key>
 		<dict>
 			<key>NSStringFormatSpecTypeKey</key>

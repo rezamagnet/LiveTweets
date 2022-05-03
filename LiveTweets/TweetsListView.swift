@@ -21,12 +21,12 @@ struct TweetsListView: View {
                 }
             }
             .listStyle(.plain)
-            .navigationTitle("Tweets".localized())
+            .navigationTitle("Tweets")
             .overlay {
                 showNetworkState()
             }
         }
-        .searchable(text: $ruleText, prompt: "Keyword Search".localized())
+        .searchable(text: $ruleText, prompt: "Keyword Search")
         .onSubmit(of: .search, {
             Task {
                 await twitterViewModel.replaceRule(withText: ruleText)
