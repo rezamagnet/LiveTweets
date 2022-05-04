@@ -9,7 +9,6 @@ import SwiftUI
 
 @main
 struct LiveTweetsApp: App {
-    
     private let twitterViewModel: TwitterViewModel = {
         let twitter = TwitterAPI(session: .default)
         return TwitterViewModel(twitter: twitter)

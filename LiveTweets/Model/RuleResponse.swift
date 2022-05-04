@@ -8,9 +8,7 @@
 import Foundation
 
 struct RuleResponse: Codable {
-    
     var data: [RuleData]?
-    
     struct RuleData: Codable {
         let id: String
     }

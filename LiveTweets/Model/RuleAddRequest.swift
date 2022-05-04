@@ -9,7 +9,6 @@ import Foundation
 
 struct RuleAddRequest: Codable {
     let add: [RuleValue]
-    
     struct RuleValue: Codable {
         let value: String
     }

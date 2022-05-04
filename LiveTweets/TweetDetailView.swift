@@ -8,9 +8,7 @@
 import SwiftUI
 
 struct TweetDetailView: View {
-    
     var tweet: Tweet
-    
     var body: some View {
         VStack(alignment: .leading) {
             Text("Tweet id: \(tweet.id)")

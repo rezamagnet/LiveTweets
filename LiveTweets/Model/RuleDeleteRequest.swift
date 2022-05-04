@@ -8,11 +8,8 @@
 import Foundation
 
 struct RuleDeleteRequest: Codable {
-    
     let delete: RuleDeleteIds
-    
     struct RuleDeleteIds: Codable {
         let ids: [String]
     }
 }
-

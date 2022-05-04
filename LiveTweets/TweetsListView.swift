@@ -8,10 +8,8 @@
 import SwiftUI
 
 struct TweetsListView: View {
-    
     @ObservedObject var twitterViewModel: TwitterViewModel
     @State private var ruleText: String = ""
-    
     var body: some View {
         NavigationView {
             List(twitterViewModel.tweets) { tweet in
@@ -36,15 +34,11 @@ struct TweetsListView: View {
             twitterViewModel.getLiveData()
         }
     }
-    
-    
     @ViewBuilder private func showNetworkState() -> some View {
         if let error = twitterViewModel.error {
             Text(error)
-            
         } else if twitterViewModel.isFetching {
             ProgressView()
-            
         } else {
             // Show list items
         }

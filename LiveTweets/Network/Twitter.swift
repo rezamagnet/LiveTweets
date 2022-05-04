@@ -8,6 +8,6 @@
 import Foundation
 
 protocol Twitter {
-    func requestLiveTweets(completion: @escaping (Result<Tweet, Error>) -> ())
+    func requestLiveTweets(completion: @escaping (Result<Tweet, Error>) -> Void)
     func updateRule(text: String) async -> Result<Ignorable, Error>
 }

@@ -10,14 +10,11 @@ import Alamofire
 import Combine
 
 class TwitterAPI: Twitter {
-    
     var requestsCancellable: Set<AnyCancellable> = []
     var session: Session
-    
     init(session: Session) {
         self.session = session
     }
-    
     struct ErrorModel: LocalizedError {
         var errorDescription: String?
     }
